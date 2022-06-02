@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../../assets/images/background-images/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container::after {
+    content: '';
+    background-color: rgba(239, 239, 247, 0.85);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.child-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.child-container h3{
+    font-size: 24px;
+    margin-bottom: 14px;
+    letter-spacing: 3px;
+}
