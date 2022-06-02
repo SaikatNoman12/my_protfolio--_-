@@ -91,7 +91,7 @@
     justify-content: center;
 }
 
-.socila-medai span {
+.socila-medai span  {
     margin: 0 9px;
     border: 1px solid black;
     width: 50px;
@@ -101,10 +101,22 @@
     align-items: center;
     justify-content: center;
     transition: all .6s;
+    transform: scale(1);
+    transform-origin: center bottom;
 }
 
-.socila-medai span:hover {
+.socila-medai span a{
+    text-decoration: none;
+    color: black;
+    transition: all .6s;
+}
+
+.socila-medai span:hover{
     background-color: black;
+    transform: scale(1);
+}
+
+.socila-medai span:hover a{
     color: #fff;
 }
 
